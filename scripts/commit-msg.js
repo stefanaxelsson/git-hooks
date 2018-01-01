@@ -14,7 +14,7 @@ const currentBranchResults = execGitCmd(["rev-parse", "--abbrev-ref", "HEAD"]);
 const currentBranch = currentBranchResults.length
   ? currentBranchResults[0]
   : "";
-const commitMessage = fs.readFileSync(process.argv[2]).toString();
+const commitMessage = fs.readFileSync(process.argv[2], "utf8");
 
 const branchIssue = getIssueNumber(currentBranch);
 const commitIssue = getIssueNumber(commitMessage);
