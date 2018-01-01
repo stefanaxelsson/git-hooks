@@ -1,0 +1,10 @@
+{
+  "name": "git-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "./scripts/install-git-hooks.js"
+  },
+  "author": "Stefan Axelsson <stefan.axelsson@gmail.com>",
+  "license": "MIT"
+}
