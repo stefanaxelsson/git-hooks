@@ -3,7 +3,7 @@ const { execGitCmd } = require("./util");
 const fs = require("fs");
 
 const ISSUE_PATTERN = /([a-z]+\-[0-9]+)/i;
-const NON_ISSUE_PATTERN = /^(Merged|NO-JIRA)/;
+const NON_ISSUE_PATTERN = /^(Merged?|NO-JIRA)/;
 
 const getIssueNumber = input => {
   const matches = ISSUE_PATTERN.exec(input);
